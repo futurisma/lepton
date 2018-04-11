@@ -30,6 +30,11 @@ pipeline {
             }
         }
 
+        stage('Copy') {
+            steps {
+                sh 'cp lepton /home/GitHub/lepton'
+            }
+        }
 
     }
 }
